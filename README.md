@@ -1,76 +1,94 @@
 # Product Review Sentiment Analysis
 
-The goal of this project is to analyze customer reviews to determine their sentiment—positive, negative, or neutral—based on the text content of the reviews and associated metadata. This analysis helps to understand customer feedback, identify product strengths and weaknesses, and improve the overall customer experience by providing actionable insights.
+Ever wondered what customers *really* think? This project reads product reviews and figures out whether they're positive, negative, or neutral—so you can spot patterns, fix what's broken, and double down on what works.
 
-If you find this project useful, please consider giving it a star ⭐ on GitHub. Contributions are also welcome!
+![Dashboard screenshot](Screenshot%20(130).png)
 
-![alt text](<Screenshot (130).png>)
+---
 
-## Table of Contents
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Features](#features)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
-### Technologies Used
-- Python
-- Streamlit
-- Scikit-learn
-- NLTK
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
+## What You Can Do
 
-### Installation
+- **Analyze any review** — Paste text and get an instant sentiment result (positive, neutral, or negative)
+- **Try sample reviews** — One-click examples to see how it works
+- **Explore insights** — Word clouds and sentiment charts from your dataset
+- **Keep it simple** — Clean dashboard, no clutter
 
-To set up the project, follow these steps:
+---
+
+## Quick Start
 
 ```bash
-# Clone the repository
+# Clone and go
 git clone https://github.com/yourusername/Product-Review-Sentiment-Analysis.git
-
-# Navigate into the project directory
 cd Product-Review-Sentiment-Analysis
 
-# Create a virtual environment
-python -m venv Product_Review_Analysis
+# Set up a virtual environment (recommended)
+python -m venv venv
 
-# Activate the virtual environment
-# On Windows
-Product_Review_Analysis\Scripts\activate
-# On macOS/Linux
-source Product_Review_Analysis/bin/activate
+# Windows
+venv\Scripts\activate
+
+# macOS/Linux
+source venv/bin/activate
 
 # Install dependencies
 pip install -r requirements.txt
-```
-### Usage
-After setting up the project, you can run the Streamlit app with the following command:
-```bash
+
+# Launch the app
 streamlit run app/sentiment_dashboard.py
 ```
-This will launch the application in your web browser, where you can input reviews and visualise sentiment analysis results.
 
-### Features
-- Sentiment classification of reviews (positive, negative, neutral)
-- Visualisation of sentiment distribution across different product categories
-- Real-time sentiment prediction for user-input reviews
-- Interactive dashboard for exploring customer feedback
+Open the URL in your browser (usually `http://localhost:8501`) and you're good to go.
 
-### Contributing
-Contributions are welcome! Please read the contributing guidelines for details on how to contribute.
-```bash
-- Fork the repository.
-- Create a new feature branch (git checkout -b feature-name).
-- Commit your changes (git commit -m 'Add some feature').
-- Push to the branch (git push origin feature-name).
-- Open a pull request.
+---
+
+## Tech Stack
+
+- **Python** — Core logic
+- **Streamlit** — Web dashboard
+- **Scikit-learn** — Sentiment model
+- **NLTK** — Text processing
+- **Pandas, NumPy** — Data handling
+- **Matplotlib, Seaborn, WordCloud** — Visualizations
+
+---
+
+## Project Structure
+
 ```
-### License
-This project is licensed under the MIT License. See the LICENSE file for details.
+├── app/
+│   └── sentiment_dashboard.py   # The Streamlit app
+├── data/
+│   └── Amazon Product Review.txt # Sample dataset
+├── models/
+│   ├── sentiment_model.pkl      # Trained model
+│   └── vectorizer.pkl           # TF-IDF vectorizer
+└── notebooks/                    # Analysis notebooks
+```
 
-### Contact
-For any inquiries or feedback please contact me at https://nafisalawalidris.github.io/13/.
+---
+
+## Contributing
+
+Ideas and pull requests are welcome. If you’d like to contribute:
+
+1. Fork the repo
+2. Create a branch (`git checkout -b feature/your-idea`)
+3. Commit your changes (`git commit -m 'Add your idea'`)
+4. Push and open a pull request
+
+---
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+## Contact
+
+Questions or feedback? Reach out via [the author's portfolio](https://nafisalawalidris.github.io/13/).
+
+---
+
+If this project helps you, consider giving it a star ⭐ — it goes a long way.
